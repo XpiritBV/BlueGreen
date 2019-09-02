@@ -1,2 +1,9 @@
-*
-!bin/Release/netcoreapp2.2/publish/
+.dockerignore
+.env
+.git
+.gitignore
+.vs
+.vscode
+*/bin
+*/obj
+**/.toolstarget
