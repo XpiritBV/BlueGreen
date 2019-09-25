@@ -23,7 +23,9 @@
       "launchUrl": "api/color",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "color": "grey"
+        "color": "grey",
+        "buggy": "true",
+        "buggy-status": "503"
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     },
