@@ -1,5 +1,5 @@
 ﻿dotnet build -c Release
-dotnet publish -o "./bin/Release/netcoreapp2.2/publish"
+dotnet publish -o "./bin/Release/netcoreapp3.0/publish"
 
 docker build -f Dockerfile.blue -t bluegreen:blue -t xpiritbv/bluegreen:blue .
 docker build -f Dockerfile.green -t bluegreen:green -t xpiritbv/bluegreen:green .
