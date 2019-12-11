@@ -1,11 +1,11 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
 ENV color=grey
 
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster-slim AS build
 WORKDIR /src
 COPY ["BlueGreen/BlueGreen.csproj", "BlueGreen/"]
 RUN dotnet restore "BlueGreen/BlueGreen.csproj"
